@@ -1,0 +1,8 @@
+@for $i from 1 through 100 {
+  .bar-#{$i} {
+    &:after {
+      $value: ($i * 1%);
+      width: $value !important;
+    }
+  }
+}
